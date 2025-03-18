@@ -126,6 +126,6 @@ components:
       properties:
         id:
           type: string
-        quantuty:
+        quantity:
           type: integer
           format: int32
