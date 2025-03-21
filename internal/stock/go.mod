@@ -6,7 +6,9 @@ replace github.com/Oscar-Lu-01/gorder/common => ../common
 
 require (
 	github.com/Oscar-Lu-01/gorder/common v0.0.0-00010101000000-000000000000
+	github.com/sirupsen/logrus v1.8.1
 	github.com/spf13/viper v1.20.0
+	google.golang.org/grpc v1.67.3
 )
 
 require (
@@ -32,7 +34,6 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/pelletier/go-toml/v2 v2.2.3 // indirect
 	github.com/sagikazarmark/locafero v0.7.0 // indirect
-	github.com/sirupsen/logrus v1.8.1 // indirect
 	github.com/sourcegraph/conc v0.3.0 // indirect
 	github.com/spf13/afero v1.12.0 // indirect
 	github.com/spf13/cast v1.7.1 // indirect
@@ -48,7 +49,6 @@ require (
 	golang.org/x/sys v0.29.0 // indirect
 	golang.org/x/text v0.21.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20241223144023-3abc09e42ca8 // indirect
-	google.golang.org/grpc v1.67.3 // indirect
 	google.golang.org/protobuf v1.36.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

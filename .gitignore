@@ -1,0 +1,26 @@
+# 忽略所有的二进制文件
+*.exe
+*.out
+*.dll
+
+# 忽略 Go 语言的编译缓存目录
+__debug_bin/
+vendor/
+*.test
+
+# 忽略 IDE 相关的配置文件
+.env/
+.idea/
+.vscode/
+*.iml
+
+# 忽略日志文件
+logs/*.log
+
+# 忽略临时文件
+**/tmp/
+**/bin/
+.gobincache/
+
+# 但跟踪特定的临时文件
+!special.tmp
