@@ -7,4 +7,4 @@ genproto:
 
 .PHONY:genopenapi
 genopenapi:
-	@./scripts/
+	@./scripts/genopenapi.sh
