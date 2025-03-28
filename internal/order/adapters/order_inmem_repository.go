@@ -9,13 +9,26 @@ import (
 	"time"
 )
 
+// 实现
 type MemoryOrderRepository struct {
 	//共享锁，所以传指针
 	lock  *sync.RWMutex
 	store []*domain.Order
 }
 
+// 测试代码：data类型存储在domain中，从domain里取
+var fakeData = []*domain.Order{}
+
 func NewMemoryOrderRepository() *MemoryOrderRepository {
+	//测试代码
+	s := make([]*domain.Order, 0)
+	s = append(s, &domain.Order{
+		ID:          "fake-ID",
+		CustomerID:  "fake-customer-id",
+		Status:      "fake-status",
+		PaymentLink: "fake-payment-link",
+		Items:       nil,
+	})
 	return &MemoryOrderRepository{
 		lock:  &sync.RWMutex{},
 		store: make([]*domain.Order, 0),
